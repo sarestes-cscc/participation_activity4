@@ -2,12 +2,8 @@
 
 word_iterator = iter(["red", "green", "purple", "blue"])
 
-next(word_iterator)
-
-next(word_iterator)
-
-next(word_iterator)
-
-next(word_iterator)
-
-next(word_iterator)
+try:
+    while True:
+        print(next(word_iterator))
+except StopIteration:
+    print("No more words.")
